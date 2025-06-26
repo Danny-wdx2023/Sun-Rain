@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'YSBTH';
+  src:
+    url('./fonts/YouSheBiaoTiHei.woff2') format('woff2'),
+    url('./fonts/YouSheBiaoTiHei.woff') format('woff'),
+    url('./fonts/YouSheBiaoTiHei.ttf') format('truetype');
+  font-display: swap;
+}
+
+* {
+  font-family: sans-serif;
+}

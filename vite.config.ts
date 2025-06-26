@@ -8,14 +8,17 @@ import AutoImport from 'unplugin-auto-import/vite'
 import { NaiveUiResolver } from 'unplugin-vue-components/resolvers'
 import Components from 'unplugin-vue-components/vite'
 
+import { viteMockServe } from 'vite-plugin-mock'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [
     vue(),
     vueDevTools(),
     AutoImport({
+      include: [/\.vue$/, /\.ts$/],
       imports: [
         'vue',
+        'vue-router',
         {
           'naive-ui': ['useDialog', 'useMessage', 'useNotification', 'useLoadingBar'],
         },
@@ -23,6 +26,9 @@ export default defineConfig({
     }),
     Components({
       resolvers: [NaiveUiResolver()],
+    }),
+    viteMockServe({
+      mockPath: 'mock',
     }),
   ],
   resolve: {

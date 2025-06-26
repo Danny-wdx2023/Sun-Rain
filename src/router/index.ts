@@ -5,22 +5,37 @@ const router = createRouter({
   routes: [
     {
       path: '/',
-      name: 'home',
+      name: 'Home',
       component: () => import('@/views/HomeView.vue'),
     },
     {
       path: '/products',
-      name: 'products',
-      component: () => import('@/views/ProductsView.vue'),
+      children: [
+        {
+          path: '',
+          name: 'ProductHome',
+          component: () => import('@/views/ProductsView.vue'),
+        },
+        {
+          path: 'grid-view',
+          name: 'ProductsGridView',
+          component: () => import('@/views/ProductsGridView.vue'),
+        },
+        {
+          path: ':id',
+          name: 'ProductDetails',
+          component: () => import('@/views/ProductDetailsView.vue'),
+        },
+      ],
     },
     {
       path: '/market',
-      name: 'market',
+      name: 'MarketView',
       component: () => import('@/views/MarketView.vue'),
     },
     {
       path: '/contact',
-      name: 'contact',
+      name: 'Contact',
       component: () => import('@/views/ContactView.vue'),
     },
   ],

@@ -1,13 +1,52 @@
 <script setup lang="ts">
-import { RouterLink, RouterView } from 'vue-router'
+import { type ProductArray } from '@/types/product'
+import { api } from '@/utils'
+
+const products = ref<ProductArray>([])
+api('/api/products', products)
+provide('products', products)
 </script>
 
 <template>
-  <nav>
-    <RouterLink to="/">Home</RouterLink>
-    <RouterLink to="/products">Products</RouterLink>
-    <RouterLink to="/market">Market</RouterLink>
-    <RouterLink to="/contact">Contact</RouterLink>
-  </nav>
-  <RouterView></RouterView>
+  <!-- <n-config-provider :theme="darkTheme"> -->
+  <div id="root">
+    <header>
+      <div id="left">
+        <img src="/logo-rect.jpg" alt="Sun-Rain" />
+        <SearchProducts></SearchProducts>
+      </div>
+      <NavBar />
+    </header>
+    <RouterView />
+  </div>
+  <!-- </n-config-provider> -->
 </template>
+
+<style scoped>
+header {
+  position: fixed;
+  inset: 0 0 auto;
+  padding: 18px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6vw;
+  z-index: 3;
+  border-radius: 4px;
+  box-shadow: 0 4px 20px lightgray;
+}
+div#left {
+  display: flex;
+  align-items: center;
+  gap: 2vw;
+}
+img {
+  width: 50%;
+  display: inline;
+  transform: translateY(-4px);
+}
+.n-input {
+  width: 40%;
+}
+</style>
