@@ -48,12 +48,14 @@ const product = computed<Product>(() => products.value[props.id - 1])
       </n-table>
     </article>
     <n-carousel show-arrow autoplay mousewheel keyboard draggable>
-      <img
-        :src="`/products/${product.name}/${img}`"
-        :alt="`${product.name}${product.id}`"
-        v-for="img in product.photos"
-        :key="img"
-      />
+      <div class="img-container">
+        <img
+          :src="`/productImages/${product.name}/${img}`"
+          :alt="`${product.name}${product.id}`"
+          v-for="img in product.photos"
+          :key="img"
+        />
+      </div>
     </n-carousel>
   </section>
   <component :is="props.empty" v-else></component>
@@ -61,15 +63,21 @@ const product = computed<Product>(() => products.value[props.id - 1])
 <style scoped>
 section {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 3fr 2fr;
   gap: 2vw;
 }
 .n-h2 {
   display: inline;
 }
+div.img-container {
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  object-position: bottom;
+}
 img {
   width: 100%;
   height: 100%;
+
   object-fit: cover;
   object-position: center;
 }

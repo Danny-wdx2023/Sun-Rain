@@ -6,30 +6,12 @@ const data = ref<TreeOption[]>([])
 api('/api/category', data)
 
 const selectedProduct = ref<number>(0)
-const selectRegion = ref<boolean>(false)
-const selectRegionPhoto = ref<string>('')
+const first = ref<boolean>(true)
 const nodeProps = ({ option }: { option: TreeOption }) => ({
   onClick() {
     if (typeof option.key === 'number') {
-      selectRegion.value = false
+      first.value = false
       selectedProduct.value = option.key
-    } else {
-      selectRegion.value = true
-      switch (option.key) {
-        case 'category-1':
-          selectRegionPhoto.value = 'USMap.jpg'
-          break
-        case 'category-2':
-          break
-        case 'category-3':
-          break
-        case 'category-4':
-          break
-        case 'category-5':
-          break
-        default:
-          break
-      }
     }
   },
   onContextMenu() {},
@@ -58,13 +40,9 @@ const nodeProps = ({ option }: { option: TreeOption }) => ({
         ></n-tree>
       </n-scrollbar>
     </aside>
-    <ProductDetails
-      :id="selectedProduct"
-      :empty="ProductDetailsNotSelectedYet"
-      v-if="!selectRegion"
-    />
+    <ProductDetails :id="selectedProduct" :empty="ProductDetailsNotSelectedYet" v-if="!first" />
     <section v-else>
-      <img :src="`../assets/regionPhotos/${selectRegionPhoto}`" alt="Region Photo" />
+      <img src="../assets/regionPhotos/USMap.jpg" alt="Region Photo" id="usmap" />
     </section>
   </main>
 </template>
@@ -86,5 +64,10 @@ img,
 .n-carousel {
   width: 100%;
   height: 100%;
+}
+#usmap {
+  width: 80%;
+  height: 80%;
+  transform: translate(10%, 10%);
 }
 </style>

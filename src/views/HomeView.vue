@@ -4,7 +4,7 @@
     <section id="firstpage">
       <n-h1> 木链天下 </n-h1>
       <n-text>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;我们致力于搭建林产品领域方面海外供货商与国内用户之间的桥梁，帮助客户实现以最低成本获取最大收益。
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;我们致力于搭建林产品领域海外供货商与国内用户之间的桥梁，帮助客户实现以最低成本获取最大收益。
       </n-text>
     </section>
     <section id="secondpage">
@@ -28,23 +28,23 @@
 </template>
 <style scoped>
 #bg {
-  position: absolute;
+  position: relative;
+  top: 10vh;
   width: 100%;
   opacity: 0.8;
-  z-index: -1;
   filter: brightness(60%);
-  clip-path: polygon(0 0, 100% 0, 100% calc(100vh + 32%), 0 (100vh + 32%));
 }
 main {
   position: absolute;
   inset: 0 0 auto;
 }
 section {
-  height: 100vh;
+  height: 90vh;
 }
 section#firstpage {
   width: 100%;
   display: grid;
+  height: 100vh;
   grid-template: 1fr 1fr / 1fr 1fr;
   grid-auto-flow: column;
 }

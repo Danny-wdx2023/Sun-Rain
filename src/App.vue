@@ -1,25 +1,28 @@
 <script setup lang="ts">
 import { type ProductArray } from '@/types/product'
 import { api } from '@/utils'
+import { dateZhCN, zhCN } from 'naive-ui'
 
 const products = ref<ProductArray>([])
-api('/api/products', products)
-provide('products', products)
+onMounted(() => {
+  api('/api/products', products)
+  provide('products', products)
+})
 </script>
 
 <template>
-  <!-- <n-config-provider :theme="darkTheme"> -->
-  <div id="root">
-    <header>
-      <div id="left">
-        <img src="/logo-rect.jpg" alt="Sun-Rain" />
-        <SearchProducts></SearchProducts>
-      </div>
-      <NavBar />
-    </header>
-    <RouterView />
-  </div>
-  <!-- </n-config-provider> -->
+  <n-config-provider :locale="zhCN" :date-locale="dateZhCN">
+    <div id="root">
+      <header>
+        <div id="left">
+          <img src="/logo-rect.jpg" alt="Sun-Rain" />
+          <SearchProducts></SearchProducts>
+        </div>
+        <NavBar />
+      </header>
+      <RouterView />
+    </div>
+  </n-config-provider>
 </template>
 
 <style scoped>

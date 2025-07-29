@@ -1,40 +1,38 @@
 <script setup lang="ts">
-import MiniSearch, { type SearchResult } from 'minisearch'
-import type { Product, ProductArray } from '@/types/product'
+import { api } from '@/utils'
+import { useRoute, useRouter } from 'vue-router'
 const show = ref<boolean>(false)
 const query = ref<string>('')
-const minisearch = new MiniSearch({
-  fields: ['name', 'botanicalName', 'grade'],
-  storeFields: ['id', 'name'],
-  searchOptions: {
-    boost: { name: 2 },
-    fuzzy: 0.2,
-    prefix: true,
-  },
-})
-type ProductItem = {
+const loading = ref<boolean>(false)
+
+type ResType = {
   id: number
   name: string
   botanicalName: string
   grade: string
 }
-const products: ProductItem[] = inject<Ref<ProductArray>>('products', ref([])).value.map(
-  (x: Product) => ({
-    id: x.id,
-    name: x.name,
-    botanicalName: x.parameter.botanicalName,
-    grade: x.parameter.grade,
-  }),
-)
-minisearch.addAll(products)
+const result = ref<ResType[]>([])
 
-const result = ref<SearchResult[]>([])
 let timer: number | null = null // debounce
 const handleChange = () => {
   if (timer) clearTimeout(timer)
   timer = setTimeout(() => {
-    result.value = minisearch.search(query.value)
+    loading.value = true
+    setTimeout(() => {
+      api(`/api/search?q=${query.value}`, result)
+      loading.value = false
+    }, 500)
   }, 1000)
+}
+
+const router = useRouter()
+const route = useRoute()
+const handle = (id: number) => {
+  router.push(`/products/${id}`)
+  if (route.fullPath.startsWith('/products/')) {
+    setTimeout(() => location.reload(), 10)
+  }
+  show.value = false
 }
 </script>
 <template>
@@ -53,19 +51,28 @@ const handleChange = () => {
       placeholder="请输入关键词..."
       size="large"
       @input="handleChange"
+      :loading
+      autofocus
     ></n-input>
-    <n-list hoverable clickable>
-      <n-list-item v-for="res in result" :key="res.id">
-        <n-thing :title="res.name" style="margin-top: 10px">
-          <template #description>
-            <n-space size="small" style="margin-top: 4px">
-              <n-tag :bordered="false" type="info" size="small"> 暑夜 </n-tag>
-              <n-tag :bordered="false" type="info" size="small"> 晚春 </n-tag>
-            </n-space>
-          </template>
-        </n-thing>
-      </n-list-item>
-    </n-list>
+    <n-scrollbar v-if="result.length" style="max-height: 58vh; margin-top: 2vh">
+      <n-list hoverable clickable>
+        <n-list-item v-for="res in result" :key="res.id" @click="handle(res.id)">
+          <n-thing :title="res.name">
+            <template #description>
+              <n-space size="small" style="margin-top: 4px">
+                <n-tag :bordered="false" type="info" size="small">
+                  {{ res.name.slice(-2) == '锯材' ? '锯材' : res.name.slice(-2) }}
+                </n-tag>
+                <n-tag :bordered="false" type="info" size="small">
+                  {{ res.botanicalName || '/' }}
+                </n-tag>
+                <n-tag :bordered="false" type="info" size="small"> {{ res.grade || '/' }} </n-tag>
+              </n-space>
+            </template>
+          </n-thing>
+        </n-list-item>
+      </n-list>
+    </n-scrollbar>
+    <n-empty description="无数据" style="margin-top: 16%" size="huge" v-else></n-empty>
   </n-modal>
 </template>
-<style scoped></style>

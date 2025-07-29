@@ -8,7 +8,6 @@ import AutoImport from 'unplugin-auto-import/vite'
 import { NaiveUiResolver } from 'unplugin-vue-components/resolvers'
 import Components from 'unplugin-vue-components/vite'
 
-import { viteMockServe } from 'vite-plugin-mock'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [
@@ -27,13 +26,19 @@ export default defineConfig({
     Components({
       resolvers: [NaiveUiResolver()],
     }),
-    viteMockServe({
-      mockPath: 'mock',
-    }),
   ],
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url)),
+    },
+  },
+  server: {
+    proxy: {
+      '^(/api|/productImages|/newsImages)': {
+        target: 'https://localhost',
+        changeOrigin: true,
+        secure: false,
+      },
     },
   },
 })

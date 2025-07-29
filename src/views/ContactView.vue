@@ -11,21 +11,16 @@
     <i class="ri-mail-line"></i>
     <n-text> 通用邮箱：<a href="mailto:info@sun-rain.cn">info@sun-rain.cn</a> </n-text>
     <br />
-    <i class="ri-briefcase-line"></i>
-    <n-text>
-      商业合作：<a href="mailto:Jackie.wang@sun-rain.cn">Jackie.wang@sun-rain.cn</a> (工作日) /
-      <a href="mailto:Jackiewang2014@outlook.com">Jackiewang2014@outlook.com</a>（休假日）
-    </n-text>
-    <br />
     <i class="ri-shake-hands-line"></i>
     <n-text>
-      商业支持：<a href="mailto:Alice.zhang@sun-rain.cn">Alice.zhang@sun-rain.cn</a>
+      商业合作：<a href="mailto:Jackie.wang@sun-rain.cn">Jackie.wang@sun-rain.cn</a> (工作日) /
+      <a href="mailto:Jackiewang2014@outlook.com">Jackiewang2014@outlook.com</a>（7-24）
     </n-text>
     <br />
     <n-divider></n-divider>
 
     <i class="ri-phone-line"></i>
-    <n-text> 座机: +86-21-8037-0677 </n-text>
+    <n-text> 座机: +86-21-8037-0677 ext.801 </n-text>
     <br />
     <i class="ri-smartphone-line"></i>
     <n-text> 手机/ 微信/ WhatsApp: +86-139-1780-0231 </n-text>
