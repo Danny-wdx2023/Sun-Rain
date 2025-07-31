@@ -51,7 +51,7 @@ const product = computed<Product>(() => products.value[props.id - 1])
       <div class="img-container">
         <img
           :src="`/productImages/${product.name}/${img}`"
-          :alt="`${product.name}${product.id}`"
+          :alt="`${product.name}${img[0]}`"
           v-for="img in product.photos"
           :key="img"
         />

@@ -1,0 +1,278 @@
+[
+  {
+    "id": 1,
+    "name": "乌拉圭玫瑰桉",
+    "parameter": {
+      "botanicalName": "Eucalyptus grandis",
+      "grade": "Premium Pruned",
+      "spec": "SED 30+ CM, 5,80M with 20CM Free Trim"
+    },
+    "photos": ["1.jpg", "2.jpg", "3.jpg"],
+    "slogan": "少女粉氧化，直球颜值暴击",
+    "description": "心材初为柔粉色，氧化后转为深邃胭脂红，边材灰白。纹理交错常卷曲，形成绸缎般流光。油线在纵切面呈细密金丝，木材表面随光线变换虹彩。"
+  },
+  {
+    "id": 2,
+    "name": "云冷杉原木",
+    "parameter": {
+      "botanicalName": "Picea abies",
+      "grade": "Sawlog ABC",
+      "spec": "25cm+/11.5m plus 30cm free trim"
+    },
+    "photos": ["1.jpg", "2.jpg", "3.jpg", "4.jpg"],
+    "slogan": "匀净少节疤，乐器音梁圣材",
+    "description": "边材近白，心材淡黄棕至浅褐，整体色调素雅。直纹均匀细密，偶有暗色树脂囊。年轮界限模糊却连续，木材质地轻盈，匀净肌理中透出含蓄光泽。"
+  },
+  {
+    "id": 3,
+    "name": "云杉锯材",
+    "parameter": {
+      "botanicalName": "Picea abies",
+      "grade": "SF I-IV",
+      "spec": "customer cut size"
+    },
+    "photos": ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg"],
+    "slogan": "随机小雀斑，清新小调调",
+    "description": "乳白边材与浅棕心材色差微弱。通体细直纹理间杂不规则深色结疤，结构均匀疏松。晚材窄带形成微妙的条纹感，节痕与树脂痕构成自然印记。"
+  },
+  {
+    "id": 4,
+    "name": "南方松原木",
+    "parameter": {
+      "botanicalName": "-",
+      "grade": "-",
+      "spec": "-"
+    },
+    "photos": ["1.jpg", "2.jpg", "3.jpg"],
+    "slogan": "松脂裹全身，户外防腐战神",
+    "description": "边材呈淡黄白色至浅棕，​心材为鲜明橙褐色至深红棕，边材与心材色差显著。直纹结构中密布粗犷树脂道，​富含天然松脂形成琥珀色斑块。生长轮分界锐利，​晚材带异常宽厚且坚硬，与早材的松软形成强烈阶梯状纹理，防腐处理渗透性强。"
+  },
+  {
+    "id": 5,
+    "name": "南非松木",
+    "parameter": {
+      "botanicalName": "Pinus Patula",
+      "grade": "A30/K/KIS",
+      "spec": "SED A30 30+ CM, K:20-28 CM, KIS:12-18CM"
+    },
+    "photos": ["1.jpeg", "2.jpeg", "3.jpeg", "4.jpg", "5.jpg"],
+    "slogan": "蓝疤松香浓，性价比之王",
+    "description": "边材淡黄，心材浅棕带橙调。直纹疏密相间，多蓝灰色节疤及深色树脂道。早材宽而松软，晚材窄而致密，形成鲜明的带状纹理，松香气息持久。"
+  },
+  {
+    "id": 6,
+    "name": "南非玫瑰桉",
+    "parameter": {
+      "botanicalName": "Eucalyptus grandis",
+      "grade": "Pruned",
+      "spec": "SED 30+ CM, 5,80M with 10CM Free Trim"
+    },
+    "photos": ["3.jpg", "1.jpg", "2.jpg", "4.jpg"],
+    "slogan": "少女粉氧化，直球颜值暴击",
+    "description": "心材初为柔粉色，氧化后转为深邃胭脂红，边材灰白。纹理交错常卷曲，形成绸缎般流光。油线在纵切面呈细密金丝，木材表面随光线变换虹彩。"
+  },
+  {
+    "id": 7,
+    "name": "巴拿马柚木",
+    "parameter": {
+      "botanicalName": "Tectona grandis",
+      "grade": "Premium",
+      "spec": "Girth 100cm+"
+    },
+    "photos": ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg"],
+    "slogan": "金丝油汪汪，露天越晒越靓",
+    "description": "金黄边材与心材的蜜糖棕至咖啡棕形成反差。直纹或波浪纹中嵌黑色油线，触感油润。氧化后金丝闪现，矿物线随机分布造就粗砺美感。"
+  },
+  {
+    "id": 8,
+    "name": "日本柳杉",
+    "parameter": {
+      "botanicalName": "Cryptomeria japonica",
+      "grade": "ABC",
+      "spec": "SED 36+ CM"
+    },
+    "photos": ["1.jpg", "2.jpg", "3.jpg"],
+    "slogan": "淡紫木清香，茶室禅意本尊",
+    "description": "边材淡白，心材浅粉棕至淡紫褐。香气清冽，纹理通直细密。早材至晚材渐变柔和，材质轻软匀净。局部深色树脂囊点缀如星痕。"
+  },
+  {
+    "id": 9,
+    "name": "日本桧木",
+    "parameter": {
+      "botanicalName": "Chamaecyparis obtusa",
+      "grade": "AB",
+      "spec": "SED 28+ CM"
+    },
+    "photos": ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg"],
+    "slogan": "琥珀香千年，桑拿房顶配",
+    "description": "象牙白边材渐变为心材的琥珀黄至深橘棕。致密直纹间浮现金色芳香腺点，微光闪烁。千年生长形成的细密年轮如丝如缕，油脂线凝聚成琥珀质感。"
+  },
+  {
+    "id": 10,
+    "name": "榉木原木",
+    "parameter": {
+      "botanicalName": "Fagus sylvatica",
+      "grade": "Sawlog ABC; Peeling",
+      "spec": "40cm+/4m+"
+    },
+    "photos": ["1.jpg", "2.jpg", "3.jpg", "4.jpg"],
+    "slogan": "蒸煮更油润，工具手柄王牌",
+    "description": "边材近乎白色，心材从浅黄过渡至深沉的红褐色，过渡区色差柔和。榉木纹理细密笔直，偶有波状闪光纹。木材结构均匀紧密，经蒸煮后呈现温润的暖调，纹理对比度显著提升。"
+  },
+  {
+    "id": 11,
+    "name": "榉木锯材",
+    "parameter": {
+      "botanicalName": "Fagus sylvatica",
+      "grade": "A/AB/BC",
+      "spec": "26mm/32mm/38mm/50mm"
+    },
+    "photos": ["3.jpg", "1.jpg", "2.jpg", "4.jpg", "5.jpg"],
+    "slogan": "蒸煮更油润，工具手柄王牌",
+    "description": "边材近乎白色，心材从浅黄过渡至深沉的红褐色，过渡区色差柔和。榉木纹理细密笔直，偶有波状闪光纹。木材结构均匀紧密，经蒸煮后呈现温润的暖调，纹理对比度显著提升。"
+  },
+  {
+    "id": 12,
+    "name": "欧橡原木",
+    "parameter": {
+      "botanicalName": "Quercus alba/ Quercus robur",
+      "grade": "Sawlog ABC/AB/BC",
+      "spec": "30cm+/4m+"
+    },
+    "photos": ["1.jpg", "2.jpg", "3.jpg"],
+    "slogan": "银灰虎斑切面，高定台面绝杀",
+    "description": "奶油色边材与浅黄棕心材形成自然过渡。标志性的银灰色髓射线在纵切面呈虎斑纹，径切面则显斑驳闪光。纹理或直或涡，早期材的疏松与晚期材的致密构成鲜明层次。"
+  },
+  {
+    "id": 13,
+    "name": "欧橡锯材",
+    "parameter": {
+      "botanicalName": "Quercus alba",
+      "grade": "AB/ABC",
+      "spec": "26mm/32mm/40mm/50mm"
+    },
+    "photos": ["2.jpeg", "1.jpeg", "3.jpeg"],
+    "slogan": "银灰虎斑切面，高定台面绝杀",
+    "description": "奶油色边材与浅黄棕心材形成自然过渡。标志性的银灰色髓射线在纵切面呈虎斑纹，径切面则显斑驳闪光。纹理或直或涡，早期材的疏松与晚期材的致密构成鲜明层次。"
+  },
+  {
+    "id": 14,
+    "name": "欧洲红橡",
+    "parameter": {
+      "botanicalName": "Quercus rubra",
+      "grade": "Sawlog ABC",
+      "spec": "30cm+/4m+"
+    },
+    "photos": ["1.png", "2.png", "3.png"],
+    "slogan": "粉棕长刀线，工装骨架之王",
+    "description": "边材灰白，心材呈玫瑰粉至暖棕色。纹理笔直粗犷，布满醒目的长髓射线。木材孔洞结构显著，生长轮分界处形成深色锯齿线，造就粗犷而统一的视觉效果。"
+  },
+  {
+    "id": 15,
+    "name": "欧蜡原木",
+    "parameter": {
+      "botanicalName": "Fraxinus excelsior",
+      "grade": "Sawlog ABC & AB",
+      "spec": "30cm+/2.8m+"
+    },
+    "photos": ["2.jpg", "1.jpg", "3.jpg"],
+    "slogan": "灰底闪电纹，承重件刚需",
+    "description": "边材乳白，心材由浅灰棕向深咖色渐变，常见浅褐色条纹。直纹结构中穿插粗犷的山形纹或絮状波纹，导管线清晰形成独特肌理。生长轮分界锐利，赋予木材强烈的视觉韵律感。"
+  },
+  {
+    "id": 16,
+    "name": "欧蜡锯材",
+    "parameter": {
+      "botanicalName": "-",
+      "grade": "-",
+      "spec": "-"
+    },
+    "photos": ["1.jpg", "2.jpg", "3.jpg"],
+    "slogan": "灰底闪电纹，承重件刚需",
+    "description": "边材乳白，心材由浅灰棕向深咖色渐变，常见浅褐色条纹。直纹结构中穿插粗犷的山形纹或絮状波纹，导管线清晰形成独特肌理。生长轮分界锐利，赋予木材强烈的视觉韵律感。"
+  },
+  {
+    "id": 17,
+    "name": "白蜡原木",
+    "parameter": {
+      "botanicalName": "Fraxinus americana",
+      "grade": "Sawlog: 2sc+; Veneer log: 3sc & 4sc",
+      "spec": "Sawlog: 10''+/8'+. Veneer log:13''+/8'+"
+    },
+    "photos": ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg"],
+    "slogan": "奶白撞深棕，抗造器械骨",
+    "description": "白蜡木通常呈浅色，边材部分颜色浅谈接近白色，心材颜色从浅棕色至深棕色，有夹带棕色条纹的浅黄色。外层的浅白色边材与内层的深白色甚至棕色心材之间色差明显。白蜡木通常是直纹，木材结构粗糙且均匀。在温暖夏季长成的年轮和在寒冷冬季长成的年轮，其纹理在外观上形成了鲜明对比。永远不会有外观完全相同的两块木材。"
+  },
+  {
+    "id": 18,
+    "name": "白蜡锯材",
+    "parameter": {
+      "botanicalName": "Fraxinus americana",
+      "grade": "FAS/#1C/#2C",
+      "spec": "4/4,5/4,6/4,8/4"
+    },
+    "photos": ["2.jpg", "1.jpg", "3.jpg"],
+    "slogan": "奶白撞深棕，抗造器械骨",
+    "description": "白蜡木通常呈浅色，边材部分颜色浅谈接近白色，心材颜色从浅棕色至深棕色，有夹带棕色条纹的浅黄色。外层的浅白色边材与内层的深白色甚至棕色心材之间色差明显。白蜡木通常是直纹，木材结构粗糙且均匀。在温暖夏季长成的年轮和在寒冷冬季长成的年轮，其纹理在外观上形成了鲜明对比。永远不会有外观完全相同的两块木材。"
+  },
+  {
+    "id": 19,
+    "name": "红橡原木",
+    "parameter": {
+      "botanicalName": "Quercus rubra",
+      "grade": "Sawlog: 2sc+; Veneer log: 3sc & 4sc",
+      "spec": "Sawlog: 12''+/8'+. Veneer log:13''+/8'+"
+    },
+    "photos": ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg"],
+    "slogan": "粗孔+虎斑纹，展厅霸气担当",
+    "description": "美国红橡木是美国阔叶木森林的主要树种，具有独特的纹理，木材并不总是呈红色。其名字来源于秋天树叶的颜色。红橡木的销售可按“北部”、“南部”和“阿巴拉契亚”地区分类出售。美国红橡树有多个商用树种。"
+  },
+  {
+    "id": 20,
+    "name": "红橡锯材",
+    "parameter": {
+      "botanicalName": "Quercus rubra",
+      "grade": "FAS/#1C/#2C",
+      "spec": "4/4,5/4,6/4,8/4"
+    },
+    "photos": ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg", "6.jpg"],
+    "slogan": "粗孔+虎斑纹，展厅霸气担当",
+    "description": "美国红橡木是美国阔叶木森林的主要树种，具有独特的纹理，木材并不总是呈红色。其名字来源于秋天树叶的颜色。红橡木的销售可按“北部”、“南部”和“阿巴拉契亚”地区分类出售。美国红橡树有多个商用树种。"
+  },
+  {
+    "id": 21,
+    "name": "花旗松原木",
+    "parameter": {
+      "botanicalName": "Pseudotsuga menziesii",
+      "grade": "Sawlog ABC",
+      "spec": "-"
+    },
+    "photos": ["1.jpg", "2.jpg", "3.jpg"],
+    "slogan": "橙红晚材硬，基建狂魔最爱",
+    "description": "边材淡黄，心材从橙黄渐变至深红棕。直纹结构伴随均匀树脂道，晚材带深色坚硬条纹。春材的疏松与秋材的致密形成层叠梯状纹理，油润光泽为特有标识。"
+  },
+  {
+    "id": 22,
+    "name": "黑胡桃原木",
+    "parameter": {
+      "botanicalName": "Juglans nigra",
+      "grade": "Sawlog: 0-1sc,2sc, 3sc; Veneer log: 3sc & 4sc",
+      "spec": "0-1sc:10''+/7'+,2/3sc 12''+/8'+. Veneer log:13''+/8'+"
+    },
+    "slogan": "深色波浪纹，精工家具扛把子",
+    "photos": ["1.jpg", "2.jpg", "3.jpg", "4.jpg"],
+    "description": " 美国胡桃木的边材呈奶白色，心材则从浅棕色至棕黑色，因此颜色差异非常明显。心材偶有黑色甚至紫色条纹。美国胡桃木通常是直纹，尽管有时也带波纹状或卷曲纹理，由此而形成的特殊图案深受设计师的追捧。"
+  },
+  {
+    "id": 23,
+    "name": "黑胡桃锯材",
+    "parameter": {
+      "botanicalName": "Juglans nigra",
+      "grade": "FAS/#1C/#2C",
+      "spec": "4/4,5/4,6/4,8/4"
+    },
+    "photos": ["1.jpg", "2.jpg", "3.jpg"],
+    "slogan": "深色波浪纹，精工家具扛把子",
+    "description": "美国胡桃木的边材呈奶白色，心材则从浅棕色至棕黑色，因此颜色差异非常明显。心材偶有黑色甚至紫色条纹。美国胡桃木通常是直纹，尽管有时也带波纹状或卷曲纹理，由此而形成的特殊图案深受设计师的追捧。"
+  }
+]

@@ -3,7 +3,7 @@ import { type TreeOption } from 'naive-ui'
 import ProductDetailsNotSelectedYet from '@/components/ProductDetailsNotSelectedYet.vue'
 import { api } from '@/utils'
 const data = ref<TreeOption[]>([])
-api('/api/category', data)
+api('/data/category.json', data)
 
 const selectedProduct = ref<number>(0)
 const first = ref<boolean>(true)

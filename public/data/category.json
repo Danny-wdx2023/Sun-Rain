@@ -1,0 +1,120 @@
+[
+  {
+    "key": "category-1",
+    "label": "北美原木",
+    "children": [
+      {
+        "key": 22,
+        "label": "黑胡桃原木"
+      },
+      {
+        "key": 17,
+        "label": "白蜡原木"
+      },
+      {
+        "key": 19,
+        "label": "红橡原木"
+      }
+    ]
+  },
+  {
+    "key": "category-2",
+    "label": "北美锯材",
+    "children": [
+      {
+        "key": 20,
+        "label": "红橡锯材"
+      },
+      {
+        "key": 23,
+        "label": "黑胡桃锯材"
+      },
+      {
+        "key": 18,
+        "label": "白蜡锯材"
+      }
+    ]
+  },
+  {
+    "key": "category-3",
+    "label": "欧洲原木",
+    "children": [
+      {
+        "key": 10,
+        "label": "榉木原木"
+      },
+      {
+        "key": 15,
+        "label": "欧蜡原木"
+      },
+      {
+        "key": 12,
+        "label": "欧橡原木"
+      },
+      {
+        "key": 14,
+        "label": "欧洲红橡"
+      },
+      {
+        "key": 21,
+        "label": "花旗松原木"
+      },
+      {
+        "key": 2,
+        "label": "云冷杉原木"
+      }
+    ]
+  },
+  {
+    "key": "category-4",
+    "label": "欧洲锯材",
+    "children": [
+      {
+        "key": 11,
+        "label": "榉木锯材"
+      },
+      {
+        "key": 13,
+        "label": "欧橡锯材"
+      },
+      {
+        "key": 18,
+        "label": "白蜡锯材"
+      },
+      {
+        "key": 3,
+        "label": "云杉锯材"
+      }
+    ]
+  },
+  {
+    "key": "category-5",
+    "label": "其他原木",
+    "children": [
+      {
+        "key": 6,
+        "label": "南非玫瑰桉"
+      },
+      {
+        "key": 1,
+        "label": "乌拉圭玫瑰桉"
+      },
+      {
+        "key": 5,
+        "label": "南非松木"
+      },
+      {
+        "key": 7,
+        "label": "巴拿马柚木"
+      },
+      {
+        "key": 8,
+        "label": "日本柳杉"
+      },
+      {
+        "key": 9,
+        "label": "日本桧木"
+      }
+    ]
+  }
+]

@@ -2,7 +2,7 @@
 import { api } from '@/utils'
 const lastUpdate = ref<Date>(new Date())
 const news = ref<{ lastUpdate?: string; news?: string[] }>({})
-api('/api/news', news)
+api('/data/news.json', news)
 </script>
 <template>
   <main>
@@ -15,7 +15,7 @@ api('/api/news', news)
     <img src="../assets/lumber-chart.png" alt="lumber-chart" />
     <n-p> 上次更新：<n-time :time="lastUpdate" :to="new Date()" type="relative"></n-time> </n-p>
     <n-h2> 往期回顾 </n-h2>
-    <n-a v-for="n in news.news" :key="n" :href="`/news/${n}.zip`" download>{{ n }}<br /></n-a>
+    <n-a v-for="n in news.news" :key="n" :href="`/data/news/${n}.zip`" download>{{ n }}<br /></n-a>
   </main>
 </template>
 <style scoped>

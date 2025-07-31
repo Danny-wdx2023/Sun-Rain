@@ -20,7 +20,6 @@ declare module 'vue' {
     NFloatButton: typeof import('naive-ui')['NFloatButton']
     NH1: typeof import('naive-ui')['NH1']
     NH2: typeof import('naive-ui')['NH2']
-    NH3: typeof import('naive-ui')['NH3']
     NImage: typeof import('naive-ui')['NImage']
     NImageGroup: typeof import('naive-ui')['NImageGroup']
     NInput: typeof import('naive-ui')['NInput']

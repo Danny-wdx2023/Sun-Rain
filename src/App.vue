@@ -5,7 +5,7 @@ import { dateZhCN, zhCN } from 'naive-ui'
 
 const products = ref<ProductArray>([])
 onMounted(() => {
-  api('/api/products', products)
+  api('/data/products.json', products)
   provide('products', products)
 })
 </script>
@@ -16,7 +16,7 @@ onMounted(() => {
       <header>
         <div id="left">
           <img src="/logo-rect.jpg" alt="Sun-Rain" />
-          <SearchProducts></SearchProducts>
+          <!-- <SearchProducts></SearchProducts> -->
         </div>
         <NavBar />
       </header>
