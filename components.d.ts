@@ -36,6 +36,7 @@ declare module 'vue' {
     NThing: typeof import('naive-ui')['NThing']
     NTime: typeof import('naive-ui')['NTime']
     NTree: typeof import('naive-ui')['NTree']
+    NUl: typeof import('naive-ui')['NUl']
     ProductDetails: typeof import('./src/components/ProductDetails.vue')['default']
     ProductDetailsNotFound: typeof import('./src/components/ProductDetailsNotFound.vue')['default']
     ProductDetailsNotSelectedYet: typeof import('./src/components/ProductDetailsNotSelectedYet.vue')['default']
