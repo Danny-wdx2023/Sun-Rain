@@ -1,5 +1,5 @@
 <template>
-  <img src="../assets/worldmap.jpeg" alt="Ship" id="bg" />
+  <img src="/worldmap.webp" alt="Ship" id="bg" />
   <main>
     <section id="firstpage">
       <n-h1> 木链天下 </n-h1>
