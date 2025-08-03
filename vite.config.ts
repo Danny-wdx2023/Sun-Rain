@@ -8,6 +8,8 @@ import AutoImport from 'unplugin-auto-import/vite'
 import { NaiveUiResolver } from 'unplugin-vue-components/resolvers'
 import Components from 'unplugin-vue-components/vite'
 
+import viteCompression from 'vite-plugin-compression'
+
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [
@@ -25,6 +27,17 @@ export default defineConfig({
     }),
     Components({
       resolvers: [NaiveUiResolver()],
+    }),
+    viteCompression({
+      algorithm: 'brotliCompress',
+      ext: '.br',
+      compressionOptions: { level: 11 },
+      threshold: 10240,
+    }),
+    viteCompression({
+      algorithm: 'gzip',
+      ext: '.gz',
+      threshold: 10240,
     }),
   ],
   resolve: {
