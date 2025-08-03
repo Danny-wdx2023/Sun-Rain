@@ -25,12 +25,12 @@
     </section>
     <footer>
       <div><span>版权所有 © 2025 Sun-Rain</span></div>
-      <div>
+      <!-- <div>
         <span>友情链接<br /></span>
-        <span>A同行<br /></span>
-        <span>B同行<br /></span>
-        <span>C同行<br /></span>
-      </div>
+        <span><br /></span>
+        <span><br /></span>
+        <span><br /></span>
+      </div> -->
       <div>
         <RouterLink to="/contact">联系我们<i class="ri-arrow-right-line"></i></RouterLink>
       </div>
@@ -92,7 +92,7 @@ li:not(#link > li)::marker {
 }
 footer {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   padding: 2vw;
   gap: 2vw;
   font-size: medium;
