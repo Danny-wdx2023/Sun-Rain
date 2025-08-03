@@ -1,11 +1,9 @@
 <script setup lang="ts">
 import { type ProductArray } from '@/types/product'
-import { api } from '@/utils'
 import { dateZhCN, zhCN } from 'naive-ui'
-
-const products = ref<ProductArray>([])
+import jsonProducts from '@/assets/data/products.json'
+const products = ref<ProductArray>(jsonProducts || [])
 onMounted(() => {
-  api('/data/products.json', products)
   provide('products', products)
 })
 </script>

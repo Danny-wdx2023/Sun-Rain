@@ -1,8 +1,7 @@
 <script setup lang="ts">
-import { api } from '@/utils'
+import newsJson from '@/assets/data/news.json'
 const lastUpdate = ref<Date>(new Date())
-const news = ref<{ lastUpdate?: string; news?: string[] }>({})
-api('/data/news.json', news)
+const news = ref<{ lastUpdate?: string; news?: string[] }>(newsJson || {})
 </script>
 <template>
   <main>
