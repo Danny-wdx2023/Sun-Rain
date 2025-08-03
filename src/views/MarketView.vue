@@ -8,7 +8,7 @@ const news = ref<{ lastUpdate?: string; news?: string[] }>(newsJson || {})
     <n-h1><i class="ri-news-line"></i> 市场资讯</n-h1>
     <n-p>
       这里有最新的市场报告，这里有最专业的数据。如需了解最新资讯，请加微信👉。
-      <img src="/productImages/wx.png" alt="wx" id="wx" />
+      <img src="/wx.png" alt="wx" id="wx" />
     </n-p>
     <img src="../assets/logs-chart.png" alt="logs-chart" />
     <img src="../assets/lumber-chart.png" alt="lumber-chart" />
