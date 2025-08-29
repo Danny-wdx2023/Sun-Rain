@@ -1,7 +1,7 @@
 export type Product = {
   id: number
   name: string
-  photos: string[]
+  photos: number[]
   parameter: {
     botanicalName: string
     grade: string

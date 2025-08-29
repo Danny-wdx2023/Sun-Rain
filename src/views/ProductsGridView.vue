@@ -23,7 +23,7 @@ const products: Ref<ProductArray> = inject('products', ref([]))
         <n-image-group>
           <n-image
             :width="120"
-            :src="img"
+            :src="`/productImages/${product.id}/${img}.webp`"
             :alt="`${product.name}`"
             v-for="img in product.photos"
             :key="img"

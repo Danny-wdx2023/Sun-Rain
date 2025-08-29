@@ -49,7 +49,12 @@ const product = computed<Product>(() => products.value[props.id - 1])
     </article>
     <n-carousel show-arrow autoplay mousewheel keyboard draggable>
       <div class="img-container">
-        <img :src="img" :alt="`${product.name}`" v-for="img in product.photos" :key="img" />
+        <img
+          :src="`/productImages/${product.id}/${img}.webp`"
+          :alt="`${product.name}`"
+          v-for="img in product.photos"
+          :key="img"
+        />
       </div>
     </n-carousel>
   </section>
